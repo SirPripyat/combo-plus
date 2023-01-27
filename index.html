@@ -23,16 +23,16 @@
     </header>
 
     <main>
-        <section class="container-principal">
-            <img src="./assets/container-principal-logo.png" class="container-principal-logo">
+        <section class="container-principal" style="background-image: url('./assets/container-principal.png');">
+            <img src="/assets/container-principal-logo.png" class="container-principal-logo">
             <p class="container-principal-descricao">Combo+ is a special offer to get Disney+ and Star+ together. Save and enjoy series, movies and sports, whenever and wherever you want.</p>
             <div class="container-principal-planos">
-                <div class="planos-item">
+                <div class="planos-itens">
                     <img src="/assets/combo-plus-logo-small.png">
                     <a href="" class="button-primary-medium">Sign Up Now</a>
                     <a href="" class="button-secundary-medium">Sign up only to Disney+</a>
                 </div>
-                <div class="planos-item">
+                <div class="planos-itens">
                     <img src="/assets/star-disney-lionsgate-logo-small.png">
                     <a href="" class="button-primary-medium">Sign Up Now</a>
                     <a href="" class="button-secundary-medium">Sign up only to Star+</a>
@@ -90,34 +90,35 @@
         <section class="container-terciario">
             <h2>What do you want to watch?</h2>
             <p class="container-terciario-descricao">Premiere movies, classics and sagas, exclusive series and seasons of your favorites, animated comedies, original productions and live sports from ESPN.</p>
-            <img src="./assets/container-terciario-imagem.png">
+            <picture>
+                <source srcset="./assets/container-terciario-imagem.png" media="(min-width: 1440px)">
+                <source srcset="./assets/container-terciario-tablet.png" media="(min-width: 720px)">
+                <source srcset="./assets/container-terciario-imagem-mobile.png" media="(min-width: 360px)">
+                <img src="./assets/container-terciario-imagem.png">
+            </picture>
         </section>
 
         <section class="container-quarto">
             <div class="container-quarto-texto">
-                <h2>What do you want to watch?</h2>
+                <h2>More ESPN with Star+.</h2>
                 <p class="texto-descricao">The world's best live tournaments, original series, shows, and exclusive events.</p>
             </div>
-            <img src="./assets/container-quarto-imagem.png">
+            <img src="./assets/container-quarto-imagem.png" class="container-quarto-imagem">
         </section>
 
         <section class="container-quinto">
             <h2>The greatest stories, all in one place.</h2>
             <p class="texto-descricao">Watch never before seen movies, series, shorts and more from the world’s greatest storytellers – only available on Disney+</p>
             <div class="container-quinto-series">
-                <img src="./assets/beatles.png">
-                <img src="./assets/boba-fett.png">
-                <img src="./assets/what-if.png">
-            </div>
-            <div class="container-quinto-series">
-                <img src="./assets/olaf.png">
-                <img src="./assets/luca.png">
-                <img src="./assets/monster-at-work.png">
-            </div>
-            <div class="container-quinto-series">
-                <img src="./assets/welcome-to-earth.png">
-                <img src="./assets/hawkeye.png">
-                <img src="./assets/diary-of-a-wimpy-kid.png">
+                <img src="./assets/beatles.png" class="series-imagem">
+                <img src="./assets/boba-fett.png" class="series-imagem">
+                <img src="./assets/what-if.png" class="series-imagem">
+                <img src="./assets/olaf.png" class="series-imagem">
+                <img src="./assets/luca.png" class="series-imagem">
+                <img src="./assets/monster-at-work.png" class="series-imagem">
+                <img src="./assets/welcome-to-earth.png" class="series-imagem">
+                <img src="./assets/hawkeye.png" class="series-imagem">
+                <img src="./assets/diary-of-a-wimpy-kid.png" class="series-imagem">
             </div>
         </section>
 

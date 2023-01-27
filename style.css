@@ -17,7 +17,7 @@
 /* Conteúdo da página */
 
 .container-principal {
-    background-image: url('./assets/container-principal.png');
+
     background-repeat: no-repeat;
 
     display: flex;
@@ -49,7 +49,7 @@
     column-gap: 24px;
 }
 
-.planos-item {
+.planos-itens {
     display: flex;
     flex-direction: column;
     row-gap: 32px;
@@ -200,7 +200,14 @@
 
 .container-quinto-series {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 24px;
+
+    text-align: center;
+}
+
+.series-imagem {
+    width: calc(33.33% - 16px);
 }
 
 
@@ -231,29 +238,211 @@
     row-gap: 12px;
 }
 
+
+/* Tablet */ 
+
+@media (min-width: 740px) and (max-width: 1339px) {
+
+    /* Container Principal */
+
+    .container-principal {
+        height: 100%;
+        padding: 32px;
+    }
+    
+    .container-principal-logo {
+        height: 175px;
+    }
+    
+    .container-principal-planos {
+        flex-direction: column;
+    }
+
+
+    /* Container Secundario */
+
+    .container-secundario {
+        padding: 96px 32px;
+    }
+
+    .container-secundario-vantagens {
+        display: flex;
+        flex-direction: column;
+        row-gap: 24px;
+    }
+
+    .vantagens-item {
+        width: 100%;
+    }
+
+    .container-secundario-planos {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .planos-item-especial {
+        width: 60%;
+    }
+
+    .planos-item {
+        width: 60%;
+    }
+
+    /* Container Terciario */
+
+    .container-terciario {
+        padding: 96px 32px;
+    }
+
+    /* Container Quarto */ 
+
+    .container-quarto {
+        flex-direction: column;
+        padding: 96px 32px;
+        text-align: center;
+    }
+
+    .container-quarto-texto {
+        order: 1;
+    }
+
+    /* Container Quinto */
+
+    .container-quinto {
+        padding: 96px 32px;
+    }
+
+    .container-quinto-series {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .series-imagem {
+        width: calc(50% - 12px);
+    }
+
+    /* Container Devices */
+
+    .container-devices {
+        padding: 96px 32px;
+    }
+
+    .container-devices-devices {
+        flex-wrap: wrap;
+    }
+
+    .devices-itens {
+        width: calc(50% - 16px);
+    }
+
+}
+
 /* Mobile */
 
 @media (min-width: 360px) and (max-width: 719px) {
 
-    /* Top-app-bar */
-    .top-app-bar {
-        padding: 0 16px;
+    /* Container Principal */
+
+    .container-principal {
+        padding: 88px 16px;
+        height: 100%;
     }
 
-    .top-app-bar-logo {
-        height: 24px
+    .container-principal-logo {
+        height: 84px;
     }
 
-    .button-primary-small {
-        height: 40px;
-        font-size: 12px;
-        line-height: 18px;
+    .container-principal-descricao {
+        width: 100%;
     }
 
-    .button-secundary-small {
-        height: 40px;
-        font-size: 12px;
-        line-height: 18px;
+    .container-principal-planos {
+        flex-direction: column;
+        row-gap: 32px;
+    }
+
+    /* Container Secundário */
+
+    .container-secundario {
+        padding: 88px 16px;
+    }
+
+    .container-secundario-vantagens {
+        flex-direction: column;
+        row-gap: 32px;
+    }
+
+    .vantagens-item {
+        width: 100%;
+    }
+
+    .container-secundario-planos {
+        flex-direction: column;
+    }
+
+    .planos-item {
+        width: 100%;
+    }
+    
+    .planos-item-especial {
+        width: 100%;
+    }
+
+    /* Container Terciario */
+
+    .container-terciario {
+        padding: 88px 16px;
+    }
+
+    /* Container Quarto */
+
+    .container-quarto {
+        padding: 88px 16px;
+        flex-direction: column;
+        row-gap: 32px;
+    }
+
+    .container-quarto-texto {
+        order: 1;
+    }
+
+    .container-quarto-imagem {
+        width: 100%;
+    }
+
+    /* Container Quinto */
+
+    .container-quinto {
+        padding: 88px 16px;
+    }
+
+    .container-quinto-series {
+        gap: 16px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .series-imagem {
+        width: calc(50% - 8px);
+    }
+
+    /* Container Devices */
+
+    .container-devices {
+        padding: 88px 16px;
+    }
+
+    .container-devices-devices {
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .devices-itens {
+        width: calc(50% - 8px);
     }
 
 }

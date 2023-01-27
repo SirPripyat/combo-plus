@@ -27,6 +27,7 @@ body {
     font-family: var(--main-font);
     font-weight: 400;
     color: var(--greyscale-00);
+
 }
 
 /* Components */
@@ -44,7 +45,6 @@ body {
 
     padding: 0 40px;
 
-    position: fixed;
 }
 
 .top-app-bar-buttons {
@@ -236,4 +236,56 @@ h4  {
     font-size: 24px;
     line-height: 36px;
     font-weight: 400;
+}
+
+/* Tablet */
+
+@media (width: 740px) {
+    .rodape {
+        padding: 40px 32px;
+    }
+
+    .rodape-buttons {
+        flex-wrap: wrap;
+    }
+}
+
+/* Mobile */
+
+@media (width: 360px) {
+
+    /* Top app bar */
+
+    .top-app-bar {
+        padding: 0px 16px;
+        width: calc(100% - 32px);
+    }
+
+    .top-app-bar-logo {
+        height: 24px;
+    }
+
+    /* Buttons */
+
+    .button-primary-small {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .button-secundary-small {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    /* Rodape */
+
+    .rodape {
+        padding: 40px 16px;
+    }
+
+    .rodape-buttons {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
 }
