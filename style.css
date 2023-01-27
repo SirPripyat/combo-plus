@@ -1,0 +1,259 @@
+:root {
+    /* Colors */
+    --greyscale-00: #F9F9F9;
+    --greyscale-50: #CACACA;
+    --greyscale-100: #9EA0AF;
+    --interaction-00: #6421FF;
+    --interaction-50: #6E2CFF;
+    --interaction-100: #4D4A58;
+    --interaction-150: #34313E;
+    --background: #090B12;
+    --branding-00: 90deg, #E63B61 0%, #ED7432 100%;
+    --branding-50: 90deg, #ED7432 0%, #E63B61 100%;
+
+    --main-font: Inter;
+}
+
+/* Conteúdo da página */
+
+.container-principal {
+    background-image: url('./assets/container-principal.png');
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+
+    height: 100vh;
+    
+    padding: 96px;
+}
+
+.container-principal-logo {
+    height: 244px;
+}
+
+.container-principal-descricao {
+    font-size: 20px;
+    width: 70%;
+    text-align: center;
+}
+
+.container-principal-planos {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0;
+    column-gap: 24px;
+}
+
+.planos-item {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+}
+
+/* Container Secundario */
+
+.container-secundario {
+    padding: 96px;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+
+    text-align: center;
+}
+
+.container-secundario-vantagens {
+    display: flex;
+    column-gap: 24px;
+}
+
+.vantagens-item {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+
+    width: 33.33%;
+}
+
+.vantagens-item-especial {
+    background-image: url('./assets/vantagens-especial-background.png');
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+
+    width: 33.33%;
+}
+
+.item-logo {
+    height: 64px;
+}
+
+.item-descricao {
+    font-size: 18px;
+    line-height: 27px;
+    
+    color: var(--greyscale-50);
+}
+
+.container-secundario-aviso {
+    font-size: 10;
+    line-height: 15px;
+
+    color: var(--greyscale-100);
+}
+
+/* Container Planos */
+
+.container-secundario-planos {
+    display: flex;
+    column-gap: 32px;
+}
+
+.planos-item {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+
+    width: 33.33%;
+
+    padding: 32px 0;
+}
+
+.planos-item-especial {
+    background-image: url('./assets/vantagens-especial-background.png');
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+
+    width: 33.33%;
+
+    padding: 32px 0;
+}
+
+.plano-descricao {
+    font-size: 18px;
+    
+    color: var(--greyscale-50);
+}
+
+/* Container Terciario */
+
+.container-terciario {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+
+    padding: 96px
+}
+
+.container-terciario-descricao {
+    font-size: 16px;
+    line-height: 24px;
+
+    color: var(--greyscale-50);
+}
+
+/* Container Quarto */
+
+.container-quarto {
+    display: flex;
+    column-gap: 24px;
+
+    padding: 96px;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.container-quarto-texto {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+}
+
+.texto-descricao {
+    font-size: 18px;
+    line-height: 27px;
+
+    color: var(--greyscale-50);
+}
+
+/* Container Quinto */ 
+
+.container-quinto {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+
+    padding: 96px;
+
+    text-align: center;
+}
+
+.container-quinto-series {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* Container Devices */
+
+.container-devices {
+    padding: 96px;
+    text-align: center;
+}
+
+.container-devices-devices {
+    margin-top: 32px;
+    display: flex;
+    column-gap: 24px;
+}
+
+.devices-itens {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    width: 33.33%;
+    text-align: center;
+}
+
+.itens-texto {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+}
+
+/* Mobile */
+
+@media (min-width: 360px) and (max-width: 719px) {
+
+    /* Top-app-bar */
+    .top-app-bar {
+        padding: 0 16px;
+    }
+
+    .top-app-bar-logo {
+        height: 24px
+    }
+
+    .button-primary-small {
+        height: 40px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .button-secundary-small {
+        height: 40px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+}
