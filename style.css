@@ -170,11 +170,10 @@
 
 .container-quarto {
     display: flex;
-    column-gap: 24px;
 
     padding: 96px;
 
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
