@@ -240,7 +240,7 @@ h4  {
 
 /* Tablet */
 
-@media (min-width: 740px) and (max-width: 739px) {
+@media (min-width: 740px) and (max-width: 1024px) {
     .rodape {
         padding: 40px 32px;
     }
